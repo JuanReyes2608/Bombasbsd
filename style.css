@@ -209,7 +209,9 @@ h2{
 }
 
 .product-card-2 a{
-    
+    color: white;
+    font-size: larger;
+    text-decoration: none;
 }
 
 .industry-card{
@@ -255,6 +257,12 @@ h2{
     width: 250px;
     height: 200px;
     scale: 100%;    
+}
+
+.container-productos :hover  img{
+    transform: scale(120%);
+    transition: .3s;
+    tra
 }
 
 .container-productos2 img{
