@@ -262,9 +262,12 @@ h2{
 .container-productos :hover  img{
     transform: scale(120%);
     transition: .3s;
-    tra
 }
 
+
+.container-productos2{
+    margin-bottom: 80px ;
+}
 .container-productos2 img{
     width: 250px;
     height: 100px;
