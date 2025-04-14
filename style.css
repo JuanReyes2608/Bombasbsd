@@ -264,6 +264,19 @@ h2{
     transition: .3s;
 }
 
+.container-aplicaciones{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: space-around;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.lista-aplicaciones{
+    display: flex;
+}
 
 .container-productos2{
     margin-bottom: 80px ;
