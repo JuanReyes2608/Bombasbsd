@@ -264,20 +264,74 @@ h2{
     transition: .3s;
 }
 
-.container-aplicaciones{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    /* display: flex; */
-    justify-content: space-around;
-    padding: 15px 0;
-    text-align: center;
-}
+.container-aplicaciones {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f6f6f6;
+    border-left: 6px solid #0e6b31;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+    font-size: larger;
 
-.lista-aplicaciones{
+  }
+  
+  .container-aplicaciones:hover {
+    transform: scale(1.06);
+  }
+  
+  .container-aplicaciones h2 {
+    color: #0e6b31;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .container-aplicaciones p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .lista-servicios {
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 1em;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  .lista-servicios li {
+    margin-bottom: 10px;
+  }
+  
+  
+  .lista-aplicaciones-1 {
     display: flex;
-}
-
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0px;
+    margin-top: 60px;
+  }
+  
+  .categoria {
+    /* flex: 1 1 250px; */
+    text-align: left;
+  }
+  
+  .categoria ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .imagen-aplicacion img {
+    height: 150px;
+    width: auto;
+  }
+  
 .container-productos2{
     margin-bottom: 80px ;
 }
