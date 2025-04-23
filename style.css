@@ -422,12 +422,24 @@ footer {
 .footer-info div {
     display: flex;
     align-items: center;
-    margin: -10px 0;
     font-size: 22px;
+}
+
+.footer-info a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.footer-info a:hover{
+    color: #1bb253;
+    transform: scale(1.02);
 }
 
 .footer-info img {
     height: 20px;
     margin-right: 10px;
 }
-
