@@ -113,7 +113,6 @@ h2 {
 }
 
 
-
 /* ----------------presentation------------------------- */
 .banner {
     position: relative;
@@ -194,7 +193,7 @@ h2 {
     margin: 0;
     width: calc() ;
     height:80%;
-    animation: slide 16s forwards infinite;
+    animation: slide 20s forwards infinite;
 }
 
 .carrusel li {
@@ -237,18 +236,15 @@ h2 {
 
 @keyframes slide {
     0%   {transform: translateX(0);}
-    20%  {transform: translateX(0);}
-    25%  {transform: translateX(-100%);}
-    45%  {transform: translateX(-100%);}
+    10%  {transform: translateX(0);}
+    20%  {transform: translateX(-100%);}
+    30%  {transform: translateX(-100%);}
+    40%  {transform: translateX(-200%);}
     50%  {transform: translateX(-200%);}
-    70%  {transform: translateX(-200%);}
-    75%  {transform: translateX(-300%);}
-    100% {transform: translateX(-300%);}
-}
-
-@keyframes scroll {
-    0% {transform: translate(0);}
-    100% {transform: translate(-50%);}
+    60%  {transform: translateX(-300%);}
+    70% {transform: translateX(-300%);}
+    80%  {transform: translateX(-400%);}
+    100% {transform: translateX(-400%);}
 }
 
 /* Responsive */
@@ -326,7 +322,7 @@ h2 {
 /* ------------------------productos-------------------- */
 
 .product-container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
     display: flex;
@@ -354,13 +350,14 @@ h2 {
     display: inline-block;
     height: auto;
     width: 250px;
-    margin: 10px;
+    margin: 10px 10px;
     padding: 15px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.2s ease-in; /* Transición conjunta */
     align-content: space-between;
+    
 }
 
 .product-card:hover, .service-card:hover, .industry-card:hover {
@@ -382,6 +379,38 @@ h2 {
 .industry-wrap, .aplicaciones-wrap{
     display: flex;
 }
+/* -----------------------banner4-------------------------------- */
+.banner-4-section {
+    background-color: #084721;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .banner-4-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: wheat;
+
+  }
+  
+  .banner-4-button {
+    display: inline-block;
+    background-color: white;
+    color: #0e6b31;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .banner-4-button:hover {
+    background-color: #32503e;
+    color: white;
+  }
+/* ---------------------------------------------------------   */
+
 /* -------------------------productos.html------------------------------------ */
 .product-card-2 {
     width: 30%;
@@ -433,37 +462,6 @@ h2 {
     transition: .3s;
 }
 
-/* -----------------------banner4-------------------------------- */
-.banner-4-section {
-    background-color: #084721;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  .banner-4-section h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: wheat;
-
-  }
-  
-  .banner-4-button {
-    display: inline-block;
-    background-color: white;
-    color: #0e6b31;
-    padding: 12px 24px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .banner-4-button:hover {
-    background-color: #32503e;
-    color: white;
-  }
-/* ---------------------------------------------------------   */
 
 .container-aplicaciones {
     width: 90%;
