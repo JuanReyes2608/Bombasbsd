@@ -1,9 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
     line-height: 1.4; /* Mejora la legibilidad de los textos */
+    overflow-x: hidden;
 }
 
 h2 {
@@ -15,29 +22,33 @@ h2 {
 /* ---------------navbar-------------------- */
 
 .nav-container {
-    background-color: white;
-    padding: 5px 0;
-    border-bottom: #0c5a29 solid thick;
     display: flex;
+    align-items: center;
     justify-content: space-between; /* Ajusta el espacio */
+    flex-wrap: wrap;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: white;
+    width: 100%;
+    border-bottom: #0c5a29 solid thick;
 }
 .nav-links {
-    list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    list-style: none;
     justify-content: space-around;
     padding: 0;
     margin: auto;
     gap: 1em;
-    flex-wrap: nowrap;
-    
 }
 
 .nav-links a {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    padding: 0 20px; 
-    font-size: 23px
+    padding: 8px; 
+    font-size: 1.5rem
 }
 
 .nav-links a:hover{
@@ -350,11 +361,26 @@ h2 {
     width: 100%;
     height: 250px;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card h3, .service-card h3{
+    text-align: center;
+    font-size: medium;
+    margin: 5px 0;
+}
+.product-card p, .service-card p{
+    text-align: center;
+    margin: 10px 0;
 }
 
 .product-card a{
     text-decoration: none;
     color: white;
+}
+
+.product-card button, .service-card button{
+    margin: 10px 0;
 }
 
 .industry-wrap, .aplicaciones-wrap{
@@ -688,5 +714,36 @@ footer {
       }
 }
 
+@media (max-width=425px) {
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap; /* 👈 permite que se acomoden si no hay espacio */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-links a{
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        white-space: nowrap; /* evita que se corten */
+        font-size: 10px;
+    }
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+      
+    .navbar a {
+        flex: 1 1 45%; /* 👈 dos columnas con algo de espacio */
+        text-align: center;
+    }
+      
+}
 
 /* ------------------------------------------------------------------- */
