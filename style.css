@@ -56,7 +56,7 @@ h2 {
     
 }
 
-/* ---------- idioma ------------ */
+/* ---------------- DROPDOWN ------------------ */
 
 /* Contenedor principal */
 .dropdown {
@@ -64,10 +64,6 @@ h2 {
     display: inline-block;
     align-content: center;
     margin-right: 70px;
-}
-
-.dropdown img{
-    height: 60px;
 }
 
 .dropdown-menu{
@@ -80,7 +76,7 @@ h2 {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 100px;
+    min-width: 80px;
     box-shadow: 0px 10px 16px rgba(0,0,0,0.2);
     z-index: 1;
     align-content: center;
@@ -88,7 +84,6 @@ h2 {
 
 .dropdown-content img{
     height: 40px;
-    width: 80px;
     margin: 0px;
 }
 
@@ -108,6 +103,13 @@ h2 {
 /* Mostrar el menú cuando se pasa el mouse */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.drop-content1 {
+    height: 60px;
+}
+.drop-content2 {
+    height: 35px;
 }
 
 /* --------------------------- */
@@ -323,25 +325,10 @@ h2 {
     text-align: center;
 }
 
-.product-container-2 {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 40px 0;
-}
-
-.product-container-2 h2{
-    text-align: center;
-}
-
-
-.product-card, .service-card, .industry-card {
+.product-card {
     display: inline-block;
     height: auto;
-    width: 250px;
+    width: auto;
     margin: 10px 10px;
     padding: 15px;
     background: #fff;
@@ -349,7 +336,18 @@ h2 {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.2s ease-in; /* Transición conjunta */
     align-content: space-between;
-    
+}
+.service-card, .industry-card {
+    display: inline-block;
+    height: auto;
+    width: 202px;
+    margin: 10px 10px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.2s ease-in; /* Transición conjunta */
+    align-content: space-between;
 }
 
 .product-card:hover, .service-card:hover, .industry-card:hover {
@@ -357,12 +355,19 @@ h2 {
     box-shadow: 0px 0 10px rgb(0, 0, 0, 0.6);
 }
 
-.product-card img, .service-card img, .industry-card img {
-    width: 100%;
-    height: 250px;
+.product-card img {
+    width: 230px;
+    height: 200px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
+.service-card img, .industry-card img {
+    width: auto;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 
 .product-card h3, .service-card h3{
     text-align: center;
@@ -383,7 +388,7 @@ h2 {
     margin: 10px 0;
 }
 
-.industry-wrap, .aplicaciones-wrap{
+.industry-wrap, .service-wrap{
     display: flex;
     flex-wrap: wrap;
 }
@@ -393,16 +398,16 @@ h2 {
     color: white;
     text-align: center;
     padding: 80px 20px;
-  }
-  
-  .banner-4-section h2 {
+}
+
+.banner-4-section h2 {
     font-size: 3rem;
     margin-bottom: 20px;
     color: wheat;
+    
+}
 
-  }
-  
-  .banner-4-button {
+.banner-4-button {
     display: inline-block;
     background-color: white;
     color: #0e6b31;
@@ -411,22 +416,40 @@ h2 {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .banner-4-button:hover {
-    background-color: #32503e;
-    color: white;
-  }
+}
+
+.banner-4-button:hover {
+    background-color: #2a6f46;
+    color: wheat;
+}
 /* ---------------------------------------------------------   */
 
 /* -------------------------productos.html------------------------------------ */
-.product-card-2 {
-    width: 30%;
-    background: #fff;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.product-container-2 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.product-container-2 h2{
     text-align: center;
-    display: block; 
+}
+
+.product-card-2 {
+    display: inline-block;
+    height: auto;
+    width: 220px;
+    margin: 10px 10px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    align-content: space-between;
 }
 
 .product-card-2 a{
@@ -437,7 +460,13 @@ h2 {
 
 .product-card-2 img {
     width: 200px;
-    height: 220px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card-2 p{
+    margin: 15px;
 }
 
 .contacto {
@@ -664,7 +693,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 
     .nav-links {   
         /* flex-direction: column;
@@ -714,36 +743,110 @@ footer {
       }
 }
 
-@media (max-width=425px) {
+@media (max-width: 426px) {
+    .nav-container{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* max-width: 1200px; */
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: white;
+        width: 100%;
+        border-bottom: #0c5a29 solid thick;
+    }
+
     .nav-links{
         display: flex;
-        flex-wrap: wrap; /* 👈 permite que se acomoden si no hay espacio */
+        flex-wrap: wrap; /*permite que se acomoden si no hay espacio */
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
         width: 100%;
         box-sizing: border-box;
-    }
-
-    .nav-links a{
-        color: white;
-        text-decoration: none;
-        padding: 10px 15px;
-        white-space: nowrap; /* evita que se corten */
-        font-size: 10px;
-    }
-    .navbar {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
-      
-    .navbar a {
-        flex: 1 1 45%; /* 👈 dos columnas con algo de espacio */
+    
+    .nav-links a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        /* padding: 10px 15px; */
+        white-space: nowrap;
+        /* font-size: 10px; */
+        flex: 1 1 45%; /*dos columnas con algo de espacio */
         text-align: center;
     }
-      
+
+
+    .logo {
+        width: 90px;
+    }
+
+    .dropdown-menu{
+        display: flex;
+        position: absolute;
+        top: -125px;
+        left: 300px;
+    }
+
+    .dropdown-content{
+        position: absolute;
+        top: -85px;
+        left: 250px;
+    }
+
+    .dropdown-content a{
+        padding: auto 10px;
+    }
+
+    .dropdown-content img {
+        height: 30px;
+        width: 60px;
+    }
+
+    .drop-content1{
+        height: 30px;
+    }
+    .drop-content2{
+        height: 25px;
+    }
+
+    .product-card{
+        width: 180px;
+    }
+    .product-card img{
+        height: 100px;
+        width: 100px;
+    }
+    .service-wrap,.industry-wrap{
+        flex-direction: column;
+    }
+
+    .service-card, .industry-card{
+        width: auto;
+        height: auto;
+
+    }
+    .service-card img,.industry-card img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .product-card-2{
+        width: auto;
+        height: auto;
+    }
+
+    .product-card-2 img{
+        height: 100px;
+    }
 }
+
+
 
 /* ------------------------------------------------------------------- */
