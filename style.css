@@ -847,6 +847,41 @@ footer {
     }
 }
 
+@media (max-width: 376px){
+
+    .nav-links a{ 
+        font-size: 17px;
+    }
+
+
+    .dropdown-content img {
+        height: 20px;
+        width: 40px;
+    }
+    
+    .product-card{
+        width: 160px;
+    }
+
+    .product-card img{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .service-wrap,.industry-wrap{
+        flex-direction: column;
+    }
+
+    .service-card, .industry-card{
+        width: auto;
+        height: auto;
+
+    }
+    .service-card img,.industry-card img{
+        height: 200px;
+        width: 200px;
+    }
+}
 
 
 /* ------------------------------------------------------------------- */
