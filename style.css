@@ -850,7 +850,7 @@ footer {
 @media (max-width: 376px){
 
     .nav-links a{ 
-        font-size: 17px;
+        font-size: 16px;
     }
 
 
@@ -880,6 +880,15 @@ footer {
     .service-card img,.industry-card img{
         height: 200px;
         width: 200px;
+    }
+        .product-card-2{
+        width: 200px;
+        height: auto;
+    }
+
+    .product-card-2 img{
+        height: 100px;
+        width: 100px;
     }
 }
 
