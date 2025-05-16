@@ -435,48 +435,70 @@ iframe{
 
 /* -------------------------productos.html------------------------------------ */
 
-.product-container-2 {
-    width: 90%;
+.product-title {
+    text-align: center;
+    width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px 0;
 }
 
-.product-container-2 h2{
-    text-align: center;
+.product-grid-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .product-card-2 {
-    display: inline-block;
-    height: auto;
-    width: 220px;
-    margin: 10px 10px;
-    padding: 15px;
-    background: #fff;
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 15px;
     text-align: center;
-    align-content: space-between;
+    width: 290px;
+    transition: transform 0.3s ease, box-shadow 0.2s ease-in;
 }
 
-.product-card-2 a{
-    color: white;
-    font-size: larger;
-    text-decoration: none;
+.product-card-2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .product-card-2 img {
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
     border-radius: 5px;
+}
+
+.product-card-2 h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.product-card-2 p {
+    font-size: 0.95rem;
     margin-bottom: 10px;
 }
 
-.product-card-2 p{
-    margin: 15px;
+.product-card-2 button {
+    background-color: #0c5a29;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.product-card-2 button a {
+    text-decoration: none;
+    color: white;
+}
+
+.product-card-2 button:hover {
+    background-color: #084721;
+}
+
 
 .contacto {
     display: flex;
@@ -847,11 +869,12 @@ footer {
     }
 
     .product-card-2{
-        width: auto;
+        width: 150px;
         height: auto;
     }
 
     .product-card-2 img{
+        width: 100px;
         height: 100px;
     }
 }
@@ -890,8 +913,8 @@ footer {
         height: 200px;
         width: 200px;
     }
-        .product-card-2{
-        width: 200px;
+    .product-card-2{
+        width: 160px;
         height: auto;
     }
 
@@ -903,6 +926,7 @@ footer {
     .container-ubication{
         max-width: 90%;
     }
+
     iframe{
         width: 300px;
         height: 300px;
@@ -916,5 +940,19 @@ footer {
     }
 }
 
+@media (max-width: 330px){
+    .dropdown-menu{
+        display: flex;
+        position: absolute;
+        top: -145px;
+        left: 230px;
+    }
+
+    .dropdown-content{
+        position: absolute;
+        top: -105px;
+        left: 190px;
+    }
+}
 
 /* ------------------------------------------------------------------- */
