@@ -346,12 +346,13 @@ iframe{
 }
 .service-card, .industry-card {
     display: inline-block;
+    max-width: 350px;
     height: auto;
-    width: 202px;
+    width: auto;
     margin: 10px 10px;
     padding: 15px;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.2s ease-in; /* Transición conjunta */
     align-content: space-between;
@@ -359,7 +360,7 @@ iframe{
 
 .product-card:hover, .service-card:hover, .industry-card:hover {
     transform: translateY(-20px); /* Efecto de elevación */
-    box-shadow: 0px 0 10px rgb(0, 0, 0, 0.6);
+    box-shadow: 0px 0 10px rgb(0, 0, 0, 0.7);
 }
 
 .product-card img {
@@ -369,8 +370,8 @@ iframe{
     margin-bottom: 10px;
 }
 .service-card img, .industry-card img {
-    width: auto;
-    height: 100px;
+    width: 250px;
+    height: 200px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
